@@ -54,31 +54,43 @@ for (let j = 0; j < 10; j++) {
   }
 }
 
-
-
-
-
 for (let i = 0; i < 10; i++) {
-
   for (let j = 0; j < 10; j++) {
-
-      document.writeln(`<h4>${i} ${j} Heading 4 </h4>`)
-
+    document.writeln(`<h4>${i} ${j} Heading 4 </h4>`);
   }
 }
 
 //tabela e shumezimit
 
-
-
 for (let i = 1; i <= 10; i++) {
-
-  document.writeln(`<h2>Tabela e shumezimit me ${i}</h2>`)
+  document.writeln(`<h2>Tabela e shumezimit me ${i}</h2>`);
 
   for (let j = 1; j <= 10; j++) {
-
-       document.writeln(`<p>${i} x ${j} = ${i*j}</p>`);
+    document.writeln(`<p>${i} x ${j} = ${i * j}</p>`);
   }
-   document.writeln("<br>")
-   
+  document.writeln("<br>");
+}
+
+//print all headings
+
+for (let i = 1; i <= 6; i++) {
+  document.writeln(`<h${i}>Heading ${i}</h${i}>`);
+}
+
+for (let index = 0; index < 10; index++) {
+  if (index == 0) break;
+
+  if (index == 3 || index == 4) continue;
+  document.writeln(`<p>vlera e printuar ${index}</p>`);
+}
+
+//te gjenerohen 3 numrat e targave te vetura-ve ne RKS
+
+for (let i = 0; i < 10; i++) {
+  for (let j = 0; j < 10; j++) {
+    for (let k = 0; k < 10; k++) {
+      document.writeln(`<h1>${i}${j}${k}</h1>`);
+      if (k == 5) break;
+    }
+  }
 }
