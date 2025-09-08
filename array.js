@@ -69,8 +69,33 @@ for (let i = 0; i < numbers.length; i++) {
 
 let studenti_1 = ["Emri dhe Mbiemri", 4, 5, 4, 5, 4, 4, 3, 2];
 
-
 //te krijohen disa array per disa studenta sikurse shembulli me studenti_1
 // si printohet si tabel dhe te gjendet nota mesatare e cili do student qe do te printohet
 
+let st_1 = ["Ermri", 1, 3, 4, 4];
+let st_2 = ["Ermri", 1, 3, 4, 4];
+let st_3 = ["Ermri", 1, 3, 4, 4];
+let st_4 = ["Ermri", 1, 3, 4, 4];
+
+let students = [
+  [1, 2, 3, "Miron"],
+  [4, 5, 6],
+  [7, 8, 9],
+  [0, 0, 0],
+  [0, 0, 0, "egzon"],
+  [0, 0, 0],
+];
+
+// let array_test = [1,2,3];
+
+// alert(students[4][3]);
+
+for (let row = 0; row < students.length; row++) {
+  document.writeln(`<p>`);
+
+  for (let col = 0; col < students[row].length; col++) {
+    document.writeln(`${students[row][col]}, `);
+  }
+  document.writeln(`</p>`);
+}
 
