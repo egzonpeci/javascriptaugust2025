@@ -43,7 +43,7 @@ let persons = [
     fullName: "Miron",
     address: "Prishtine",
     phone: "044121212",
-    data:  function() {
+    data: function () {
       return `<h1>${this.fullName} ${this.phone}</h1>`;
     },
   },
@@ -51,4 +51,67 @@ let persons = [
 
 document.writeln(persons[1].data());
 
+let student = [
+  [1, 2, 3, 4],
+  [1, 2, 3, 4],
+];
+
+let objPerson = {
+  name: "Egzoniiii",
+  address: "",
+  age: 20,
+  phone: "0123123",
+};
+
+document.writeln(objPerson.name);
+
+let objArray = [1, 2, 3];
+
+let objects = [
+  {
+    name: "Egzoniiii",
+    address: "adresa e re",
+  },
+  {
+    name: "Cacttus Education",
+    address: "",
+  },
+  {
+    name: "Egzoniiii test test tes",
+    address: "Arberi",
+  },
+];
+
+document.writeln(`<h1>${objects[1].name} ${objects[2].address}</h1>`);
+
+let invoice = {
+  invoice_nr: "123",
+  date: "10/09/2025",
+  due_date: "25/09/2025",
+  items: [
+    {
+      desc: "Product_1",
+      unit_price: 2,
+      qty: 4,
+      total: function () {
+        return this.qty * this.unit_price;
+      }
+    },
+    {
+      desc: "Product_2",
+      unit_price: 2,
+      qty: 4,
+      total: function () {
+        return 3;
+      }
+    },
+  ],
+};
+
+
+
+document.writeln(`<h4>
+  
+   Te dhenat e fatures ${invoice.items[0].desc} me cmimin ${invoice.items[0].total()}  
+  </h4>`)
 
