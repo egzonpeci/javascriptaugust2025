@@ -63,3 +63,7 @@ function changeColor(obj) {
 function removeById(id) {
   document.getElementById(id).hidden = true;
 }
+
+function redText(obj) {
+  obj.style.color = "red";
+}
